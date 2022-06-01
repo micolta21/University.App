@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="University.App.Views.Forms.LoginPage"
+             WidthRequest="20" Padding="20"
+             xmlns:viewModels="clr-namespace:University.App.ViewModels.Forms">
+
+    <ContentPage.BindingContext>
+        <viewModels:LoginViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="50" VerticalOptions="Center">
+            <Image Source="login" HeightRequest="250" />
+            <Entry Placeholder="Email" Text="{Binding Email}" />
+            <Entry Placeholder="Password" IsPassword="True" Text="{Binding Password}" />
+            <Button Text="Log In" TextColor="White" BackgroundColor="Black" Command="{Binding LoginCommand}" />
+            <Button Text="Register" TextColor="White" BackgroundColor="Black" Command="{Binding RegisterCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
