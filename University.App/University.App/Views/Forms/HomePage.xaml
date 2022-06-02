@@ -4,9 +4,10 @@
              x:Class="University.App.Views.Forms.HomePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Bienvenido a la Universidad Autonoma Del Pacifico" TextColor="Beige" FontAttributes="Italic"
+                VerticalOptions="StartAndExpand" />
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
